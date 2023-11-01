@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRental.Web", "MovieRental.Web\MovieRental.Web.csproj", "{547C633C-B8E6-40A6-87BA-7970D2437F8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRental.Test", "MovieRental.Test\MovieRental.Test.csproj", "{8754249B-214A-4BF6-AED6-A6E805A55B0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{547C633C-B8E6-40A6-87BA-7970D2437F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{547C633C-B8E6-40A6-87BA-7970D2437F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{547C633C-B8E6-40A6-87BA-7970D2437F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{547C633C-B8E6-40A6-87BA-7970D2437F8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8754249B-214A-4BF6-AED6-A6E805A55B0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8754249B-214A-4BF6-AED6-A6E805A55B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8754249B-214A-4BF6-AED6-A6E805A55B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8754249B-214A-4BF6-AED6-A6E805A55B0E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
