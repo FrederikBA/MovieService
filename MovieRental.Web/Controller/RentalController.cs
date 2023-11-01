@@ -15,7 +15,6 @@ public class RentalController : ControllerBase
         _rentalService = rentalService;
     }
 
-
     [HttpPost]
     public async Task<IActionResult> RentMovies(List<MovieDto> movies)
     {

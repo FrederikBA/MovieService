@@ -21,12 +21,12 @@ public class RentalService : IRentalService
         var movieCatalogue = await _movieService.GetMovies();
 
         var selectedMovies = movieCatalogue
-            .Where(m => m.Id == movies
-                .Select(x => x.Id).FirstOrDefault()).ToList();
+            .Where(movie => movies.Any(m => m.Id == movie.Id))
+            .ToList();
 
         if (selectedMovies.Any())
         {
-            await _kafkaProducer.ProduceAsync("rentMovie", selectedMovies);
+            await _kafkaProducer.ProduceAsync("create_movie_order", selectedMovies);
         }
         else
         {

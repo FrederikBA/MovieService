@@ -6,10 +6,11 @@ namespace MovieRental.Web.Producer;
 public class KafkaProducer : IDisposable
 {
     private readonly IProducer<string, string> _producer;
+    private const string BootstrapServers = "localhost:9092";
     
-    public KafkaProducer(string bootstrapServers)
+    public KafkaProducer()
     {
-        var config = new ProducerConfig { BootstrapServers = bootstrapServers };
+        var config = new ProducerConfig { BootstrapServers = BootstrapServers };
         _producer = new ProducerBuilder<string, string>(config).Build();
     }
     
